@@ -13,7 +13,6 @@ class PdfController extends Controller
             'date' => date('m/M/Y')
         ];
 
-
         $pdf = PdfAlias::loadview('mypdf', $data);
 
         return $pdf->download('my_pdf.pdf');
